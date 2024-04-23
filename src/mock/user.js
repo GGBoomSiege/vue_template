@@ -11,7 +11,7 @@ import { mock } from 'mockjs';
 // })
 
 mock("/user/login", "post", function (option) {
-    console.log(option);
+    // console.log(option);
     return {
         code: 0,
         data: {

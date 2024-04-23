@@ -1,33 +1,33 @@
 {
-  "name": "vite_template",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.0.9",
-    "axios": "^1.6.2",
-    "element-plus": "^2.2.14",
-    "mockjs": "^1.1.0",
-    "pinia": "^2.1.7",
-    "pinia-plugin-persistedstate": "^3.2.1",
-    "screenfull": "^6.0.2",
-    "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
-  },
-  "devDependencies": {
-    "@iconify/json": "^2.2.157",
-    "@types/mockjs": "^1.0.10",
-    "@vitejs/plugin-vue": "^4.5.1",
-    "sass": "^1.69.5",
-    "unplugin-auto-import": "^0.11.2",
-    "unplugin-element-plus": "^0.4.1",
-    "unplugin-icons": "^0.14.8",
-    "unplugin-vue-components": "^0.22.4",
-    "vite": "^5.0.5"
-  }
+	"name": "vite_template",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@element-plus/icons-vue": "^2.0.9",
+		"axios": "^1.6.2",
+		"element-plus": "^2.2.14",
+		"mockjs": "^1.1.0",
+		"pinia": "^2.1.7",
+		"pinia-plugin-persistedstate": "^3.2.1",
+		"screenfull": "^6.0.2",
+		"vue": "^3.3.10",
+		"vue-router": "^4.2.5"
+	},
+	"devDependencies": {
+		"@iconify/json": "^2.2.157",
+		"@types/mockjs": "^1.0.10",
+		"@vitejs/plugin-vue": "^4.5.1",
+		"sass": "^1.69.5",
+		"unplugin-auto-import": "^0.11.2",
+		"unplugin-element-plus": "^0.4.1",
+		"unplugin-icons": "^0.14.8",
+		"unplugin-vue-components": "^0.22.4",
+		"vite": "^5.0.5"
+	}
 }
