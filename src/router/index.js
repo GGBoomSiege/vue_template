@@ -6,43 +6,40 @@ const router = createRouter({
     {
       path: '/',
       name: 'index',
-      component: () => import('../views/HomeView.vue'),
+      component: () => import('@/views/HomeView.vue'),
       redirect: '/home',
       children: [
         {
           path: 'home',
-          name: '主页',
-          component: () => import('../views/children/Home.vue')
+          name: 'home',
+          component: () => import('@/views/children/Home.vue')
         },
         {
           path: 'table',
           name: 'table',
-          component: () => import('../views/children/Table.vue')
+          component: () => import('@/views/children/Table.vue')
+        },
+        {
+          path: '/chart',
+          name: 'chart',
+          component: () => import('@/views/children/Chart.vue')
         }
       ]
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: () => import('@/views/AboutView.vue')
     },
     {
       path: '/login',
-      name: '登录页',
-      component: () => import('../views/LoginView.vue')
-    },
-    {
-      path: '/chart',
-      name: '测试页',
-      component: () => import('../views/Chart.vue')
+      name: 'login',
+      component: () => import('@/views/LoginView.vue')
     },
     {
       path: '/test',
-      name: '测试页',
-      component: () => import('../views/TestView.vue')
+      name: 'test',
+      component: () => import('@/views/TestView.vue')
     },
   ]
 })
@@ -53,6 +50,7 @@ let expire = 21600000;
 //进行路由拦截：当没有登陆标识，直接打回登陆页面，如何避免退回到 登陆页呢？
 
 router.beforeEach((to, from, next) => {
+  // console.log(to.path);
   // 从本地缓存中获取保存的 token 信息
   const tokenObj = JSON.parse(window.localStorage.getItem('isLogin'))
   if (to.path === "/login") {

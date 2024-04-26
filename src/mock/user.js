@@ -10,15 +10,27 @@ import { mock } from 'mockjs';
 //     msg: "登录成功"
 // })
 
+// mock("/user/login", "post", function (option) {
+//     // console.log(option);
+//     return {
+//         code: 0,
+//         data: {
+//             "id|+1": 1,
+//             "name": "@cname",
+//             "age|16-23": 1,
+//             "addr": "@city(true)"
+//         },
+//         msg: "登录成功"
+//     }
+// })
+
 mock("/user/login", "post", function (option) {
     // console.log(option);
     return {
         code: 0,
         data: {
-            "id|+1": 1,
-            "name": "@cname",
-            "age|16-23": 1,
-            "addr": "@city(true)"
+            "username": "liujun",
+            "password": "OpUser123",
         },
         msg: "登录成功"
     }
